@@ -34,7 +34,7 @@ def _setup_other_arch():
 def _setup_cgc():
 
     if not os.path.exists(AFL_CGC_INSTALL_PATH):
-        AFL_CGC_REPO = "https://github.com/shellphish/driller-afl.git"
+        AFL_CGC_REPO = "https://github.com/dotweiba/driller-afl-mod.git"
         if subprocess.call(['git', 'clone', AFL_CGC_REPO, AFL_CGC_INSTALL_PATH]) != 0:
             raise LibError("Unable to retrieve afl-cgc")
 
